@@ -1,6 +1,13 @@
 import java.util.Arrays;
 
 public class TwoCityProblem {
+    public static void main(String[] args) {
+        TwoCityProblem testCase = new TwoCityProblem();
+        int[][] costs = {{10, 20}, {30, 200}, {400, 50}, {30, 20}};
+
+        System.out.println(testCase.twoCitySchedCost(costs));
+    }
+
     //method to find cheapest way to get n people to city a and b with a size of 2n
     public int twoCitySchedCost(int[][] costs) {
         // Sort the costs array by the difference in cost of flying to city a and city b
